@@ -21,7 +21,8 @@
             font-weight: 400;
             font-style: normal;
         }
-        #modal-coin{
+
+        #modal-coin {
             display: flex;
             justify-content: center;
         }
@@ -31,29 +32,36 @@
 <body class="lexend-font">
 
     <!-- navbar -->
-    <nav class="lg:flex lg:justify-between lg:items-center lg:px-20 px-5 py-7 bg-[#F9F7F3] lg:space-y-0 space-y-2 sticky top-0 z-10">
-        <div class="nav">
-            <button id="blog-btn" class=" bg-[#B4F461] px-7 py-2 text-xl font-bold rounded-lg ">Blog</button>
-        </div>
-        <div class="flex justify-center ">
-            <h2 class="flex items-center gap-3"> <img src="./assets/logo.png" alt=""> <span
-                    class="text-xl font-bold">Donate Bangladesh</span></h2>
-        </div>
-        <div class="flex justify-center ">
-            <h2 class="flex items-center gap-3 text-xl font-bold"><img src="./assets/coin.png" alt=""><span
-                    id="main-balance">50500</span>BDT</h2>
-        </div>
+    <section class="sticky top-0 z-10 bg-[#F9F7F3] bg-opacity-90">
 
-    </nav>
-    <!-- main part -->
-    <main class="lg:px-20 px-5 py-7">
+        <nav class="lg:flex lg:justify-between lg:items-center lg:px-20 px-5 py-7 bg-[#F9F7F3] lg:space-y-0 space-y-2 ">
+            <div class="nav">
+                <button id="blog-btn" class=" bg-[#B4F461] px-7 py-2 text-xl font-bold rounded-lg ">Blog</button>
+            </div>
+            <div class="flex justify-center ">
+                <h2 class="flex items-center gap-3"> <img src="./assets/logo.png" alt=""> <span
+                        class="text-xl font-bold">Donate Bangladesh</span></h2>
+            </div>
+            <div class="flex justify-center ">
+                <h2 class="flex items-center gap-3 text-xl font-bold"><img src="./assets/coin.png" alt=""><span
+                        id="main-balance">50500</span>BDT</h2>
+            </div>
+
+        </nav>
         <!-- navigation btn -->
-        <div class="flex justify-center gap-4 mt-16">
+        <div class="flex justify-center gap-4 py-4">
             <button id="donation-btn"
                 class="bg-[#B4F461] hover:bg-[#B4F461] px-7 py-2 text-xl font-bold rounded-lg border">Donation</button>
             <button id="History-btn"
                 class=" hover:bg-[#B4F461] px-7 py-2 text-xl font-bold rounded-lg border">History</button>
         </div>
+    </section>
+
+
+    <!-- main part -->
+    <main class="lg:px-20 px-5 py-7">
+
+
         <div class="divider"></div>
         <!-- card section -->
         <section id="donation-page" class="space-y-8 ">
@@ -157,7 +165,7 @@
         <!--History section-->
 
         <div id="History-container" class="hidden">
-            
+
         </div>
 
 
