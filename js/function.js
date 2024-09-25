@@ -2,14 +2,15 @@
 // noyakhali-donation
 
 document.querySelector('#Donate-now-btn1').addEventListener('click', function () {
-
+    const heroBalance = document.getElementById('main-balance').innerText;
+    const balanceAmount = Number(heroBalance);
 
     const donateAmount = document.querySelector('#Amount-1').value;
     const donateAmountTk = Number(donateAmount);
     const donateFund = document.querySelector('#donate-balance1').innerText;
     const donateFundTk = Number(donateFund);
 
-    if (isNaN(donateAmount) || donateAmount < 0 || donateAmount === '') {
+    if (isNaN(donateAmount) || donateAmount < 0 || donateAmount === '' || donateAmountTk > balanceAmount) {
         alert('Invalid balance.please try again')
         
         return
@@ -34,14 +35,15 @@ document.querySelector('#Donate-now-btn1').addEventListener('click', function ()
 //feni donation club  
 
 document.querySelector('#Donate-now-btn2').addEventListener('click', function () {
-
+    const heroBalance = document.getElementById('main-balance').innerText;
+    const balanceAmount = Number(heroBalance);
 
     const donateAmount = document.querySelector('#Amount-2').value;
     const donateAmountTk = Number(donateAmount);
     const donateFund = document.querySelector('#donate-balance2').innerText;
     const donateFundTk = Number(donateFund);
 
-    if (isNaN(donateAmount) || donateAmount < 0 || donateAmount === '') {
+    if (isNaN(donateAmount) || donateAmount < 0 || donateAmount === '' || donateAmountTk > balanceAmount) {
         alert('Invalid balance.please try again')
 
         return
@@ -63,14 +65,15 @@ document.querySelector('#Donate-now-btn2').addEventListener('click', function ()
 // donate in quta 
 
 document.querySelector('#Donate-now-btn3').addEventListener('click', function (event) {
-
+    const heroBalance = document.getElementById('main-balance').innerText;
+    const balanceAmount = Number(heroBalance);
 
     const donateAmount = document.querySelector('#Amount-3').value;
     const donateAmountTk = Number(donateAmount);
     const donateFund = document.querySelector('#donate-balance3').innerText;
     const donateFundTk = Number(donateFund);
 
-    if (isNaN(donateAmount) || donateAmount < 0 || donateAmount === '') {
+    if (isNaN(donateAmount) || donateAmount < 0 || donateAmount === '' || donateAmountTk > balanceAmount) {
         alert('Invalid balance.please try again')
 
         return
@@ -120,6 +123,7 @@ function onclickBtn2() {
     const balanceAmount = Number(heroBalance);
 
     const currentBalance = balanceAmount - inputTk;
+   
 
     document.getElementById('main-balance').innerText = currentBalance;
 
